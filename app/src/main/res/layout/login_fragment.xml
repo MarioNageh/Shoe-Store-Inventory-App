@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:id="@+id/login_text"
+            style="@style/label_style"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/login"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_you_email"
+            style="@style/h2_label"
+            android:layout_marginTop="24dp"
+            android:text="@string/your_email_colon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/login_text" />
+
+
+        <include
+            android:id="@+id/container_email"
+            layout="@layout/edit_text_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            app:editTextHint="@{@string/your_email}"
+            app:layout_constraintTop_toBottomOf="@id/text_you_email" />
+
+
+        <TextView
+            android:id="@+id/text_password"
+            style="@style/h2_label"
+            android:layout_marginTop="24dp"
+            android:text="@string/your_password_colon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/container_email" />
+
+        <include
+            android:id="@+id/container_password"
+            layout="@layout/edit_text_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            app:editTextHint="@{@string/your_password}"
+            app:layout_constraintTop_toBottomOf="@id/text_password" />
+
+
+        <TextView
+
+            android:id="@+id/login"
+            style="@style/default_btn"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/red_rounded_bg"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/container_password" />
+
+        <include
+            android:id="@+id/forget_password_container"
+            layout="@layout/text_beside_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/login"
+            app:leftWord="@{@string/can_t_login}"
+            app:rightWord="@{@string/forget_password}" />
+
+        <include
+            android:id="@+id/register_container"
+            layout="@layout/text_beside_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:leftWord="@{@string/donot_have_account}"
+            app:rightWord="@{@string/register}" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

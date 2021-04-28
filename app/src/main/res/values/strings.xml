@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">ShoeStore</string>
+    <string name="shoes_store">Shoes Store</string>
+    <string name="login">Login</string>
+
+    <string name="your_email">YOUR EMAIL</string>
+    <string name="your_password">PASSWORD</string>
+
+    <string name="your_email_colon">YOUR EMAIL :</string>
+    <string name="your_password_colon">PASSWORD :</string>
+    <string name="register">Register</string>
+    <string name="can_t_login">Can\'t login?</string>
+    <string name="forget_password"> Forget Password!</string>
+
+
+    <string name="donot_have_account">Don\'t Have an Account?</string>
+    <string name="email_must_be_null">You Must Enter Email</string>
+    <string name="password_must_be_null">You Must Enter Password</string>
+    <string name="hello_all">Hello all !!</string>
+    <string name="des">We offer a great shoes thanks would you Like to Contine ..</string>
+    <string name="next">NEXT</string>
+    <string name="log_out">Logout</string>
+    <string name="instructions">Instructions</string>
+    <string name="back">BACK</string>
+    <string name="add_shoe">Add Shoe</string>
+    <string name="name">Name</string>
+    <string name="size">Size</string>
+    <string name="company">Company</string>
+    <string name="desciption">Description</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+</resources>
